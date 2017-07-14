@@ -105,8 +105,8 @@ class OAT( object ):
                 except IndexError:
                     #参数取值超出范围时，取None
                     q[k]=None
-            if q not in sets and any(q.values()):
-                # 测试集裁剪,去除重复及全空测试集
+            if q not in sets and any(map(lambda v: v is not None,q.values())):
+                # 测试集裁剪,去除重复及全None测试集
                 sets.append(q)
         return sets
 
