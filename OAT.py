@@ -10,6 +10,7 @@
 
 from itertools import groupby
 from collections import OrderedDict
+import os
 
 def dataSplit(data):
     ds=[]
@@ -26,7 +27,7 @@ def dataSplit(data):
     return ds
 
 class OAT( object ):
-    def __init__(self,OAFile='data/ts723_Designs.txt' ):
+    def __init__(self,OAFile=os.path.split(os.path.realpath(__file__))[0]+'/data/ts723_Designs.txt' ):
         """
         初始化解析构造正交表对象，数据来源：http://support.sas.com/techsup/technote/ts723_Designs.txt
         """
