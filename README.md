@@ -3,13 +3,15 @@ OrthogonalArrayTest. 使用正交实验法设计测试用例，生成测试集�
 
 
 ### 1.简介
-正交实验法是相对较难的测试用例设计方法，基本步骤如下：
+正交试验法是研究多因素、多水平的一种试验法，它是利用正交表来对试验进行设计，通过少数的试验替代全面试验，根据正交表的正交性从全面试验中挑选适量的、有代表性的点进行试验，这些有代表性的点具备了“均匀分散，整齐可比”的特点。
+
+正交实验法设计测试用例，基本步骤如下：
 1. 提取测试需求功能说明,确定因素数和水平数
 2. 根据因素数和水平数确定n值
 2. 选择合适的正交表
 3. 根据正交表把变量的值映射到表中，设计测试用例数据集
 
-参考如上，实现了使用正交表设计测试集的完整流程。
+本文参考如上步骤，使用Python实现了使用正交表自动设计测试用例的完整流程。
 
 ### 2.示例demo
 输入case1,case2,case3,分别计算m（水平数）,k（因素数目）,n（实验次数），然后查询选择合适的正交表，裁剪最终生成相关测试集
@@ -62,10 +64,6 @@ if __name__ == "__main__":
 ### 4.参考
 1. 测试用例设计-正交实验法详解：
 https://wenku.baidu.com/view/a54724156edb6f1aff001f79.html
-
-2. 用正交实验法设计测试用例
-http://blog.csdn.net/fangnannanf/article/details/52813498
-
-3. Dr. Genichi Taguchi 设计的正交表 http://www.york.ac.uk/depts/maths/tables/orthogonal.htm
-
-4. Technical Support com http://support.sas.com/techsup/technote/ts723_Designs.txt
+2. 用正交实验法设计测试用例：http://blog.csdn.net/fangnannanf/article/details/52813498
+3. Dr. Genichi Taguchi 设计的正交表：http://www.york.ac.uk/depts/maths/tables/orthogonal.htm
+4. Technical Support com：http://support.sas.com/techsup/technote/ts723_Designs.txt
