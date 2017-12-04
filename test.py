@@ -1,12 +1,5 @@
 # encoding: utf-8
 
-"""
-@version:python 2.7
-@author: weili8
-@contact: weili8@iflytek.com
-@file: test.py
-@time: 2017/7/14 16:22
-"""
 
 from OAT import *
 import json
@@ -35,7 +28,7 @@ if __name__ == "__main__":
 
     print json.dumps(oat.genSets(case1))
     print json.dumps(oat.genSets(case2))
-    print json.dumps(oat.genSets(case3))
+    print json.dumps(oat.genSets(case3), ensure_ascii=False)
     print json.dumps(oat.genSets(case4))
     print json.dumps(oat.genSets(case4, 1, 0))
     print json.dumps(oat.genSets(case4, 1, 1))

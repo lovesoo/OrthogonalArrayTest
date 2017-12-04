@@ -1,13 +1,5 @@
 # encoding: utf-8
 
-"""
-@version:python 2.7
-@author: weili8
-@contact: weili8@iflytek.com
-@file: OAT.py
-@time: 2017/7/13 11:47
-"""
-
 from itertools import groupby
 from collections import OrderedDict
 import os
