@@ -106,7 +106,7 @@ class OAT(object):
             if q not in sets:
                 if mode == 0:
                     sets.append(q)
-                elif mode == 1 and (len(filter(lambda v: v is None, q.values()))) <= num:
+                elif mode == 1 and (len(list(filter(lambda v: v is None, q.values())))) <= num:
                     # 测试集裁剪,去除重复及含None测试集
                     sets.append(q)
         return sets
