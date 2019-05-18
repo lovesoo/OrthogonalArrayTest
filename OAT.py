@@ -92,7 +92,7 @@ class OAT(object):
         """
         sets = []
         mk = [(k, len(list(v)))for k, v in groupby(params.items(), key=lambda x:len(x[1]))]
-        data = OAT.get(self, mk)
+        data = self.get(mk)
         for d in data:
             # 根据正则表结果生成测试集
             q = OrderedDict()
