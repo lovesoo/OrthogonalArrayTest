@@ -54,7 +54,6 @@ class OAT(object):
                                   data=value)
         self.data = sorted(self.data.items(), key=lambda i: i[1]['pos'])
 
-    @staticmethod
     def get(self, mk):
         """
         传入参数：mk列表，如[(2,3)],[(5,5),(2,1)]
