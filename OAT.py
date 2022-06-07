@@ -40,7 +40,8 @@ class OAT(object):
                     if key and value:
                         self.data[key] = dict(pos=pos,
                                               n=int(key.split('n=')[1].strip()),
-                                              mk=[[int(mk.split('^')[0]), int(mk.split('^')[1])] for mk in key.split('n=')[0].strip().split(' ')],
+                                              mk=[[int(mk.split('^')[0]), int(mk.split('^')[1])] for mk in
+                                                  key.split('n=')[0].strip().split(' ')],
                                               data=value)
                     key = ' '.join([k for k in i.split(' ') if k])
                     value = []
@@ -50,7 +51,8 @@ class OAT(object):
 
             self.data[key] = dict(pos=pos,
                                   n=int(key.split('n=')[1].strip()),
-                                  mk=[[int(mk.split('^')[0]), int(mk.split('^')[1])]for mk in key.split('n=')[0].strip().split(' ')],
+                                  mk=[[int(mk.split('^')[0]), int(mk.split('^')[1])] for mk in
+                                      key.split('n=')[0].strip().split(' ')],
                                   data=value)
         self.data = sorted(self.data.items(), key=lambda i: i[1]['pos'])
 
@@ -91,7 +93,11 @@ class OAT(object):
             1 严格模式，除裁剪重复测试集外，还裁剪含None测试集(num为允许None测试集最大数目)
         """
         sets = []
-        mk = [(k, len(list(v)))for k, v in groupby(params.items(), key=lambda x:len(x[1]))]
+
+        # 根据因素水平数量进行排序
+        params = OrderedDict(sorted(params.items(), key=lambda x: len(x[1])))
+
+        mk = [(k, len(list(v))) for k, v in groupby(params.items(), key=lambda x: len(x[1]))]
         data = self.get(mk)
         for d in data:
             # 根据正则表结果生成测试集
