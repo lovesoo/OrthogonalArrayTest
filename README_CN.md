@@ -1,24 +1,21 @@
 # OrthogonalArrayTest
-Use the orthogonal experiment method to design test cases and generate test sets. 
+使用正交实验法设计测试用例，生成测试集。
 
-[中文版README](https://github.com/lovesoo/OrthogonalArrayTest/blob/master/README_CN.md)
+### 1.简介
+正交试验法是研究多因素、多水平的一种试验法，它是利用正交表来对试验进行设计，通过少数的试验替代全面试验，根据正交表的正交性从全面试验中挑选适量的、有代表性的点进行试验，这些有代表性的点具备了“均匀分散，整齐可比”的特点。
 
-### 1.Introduction
-Orthogonal test method is a multi-factor and multi-level test method. It uses the orthogonal table to design the test, replaces the comprehensive test with a small number of tests, and selects from the comprehensive test according to the orthogonality of the orthogonal table. An appropriate amount of representative points are tested, and these representative points have the characteristics of "evenly dispersed, neat and comparable".
+正交实验法设计测试用例，基本步骤如下：
+1. 提取测试需求功能说明,确定因素数和水平数
+2. 根据因素数和水平数确定n值
+2. 选择合适的正交表
+3. 根据正交表把变量的值映射到表中，设计测试用例数据集
 
-Use orthogonal experiment method to design test cases, the basic steps are as follows:
+本文参考如上步骤，使用Python实现了使用正交表自动设计测试用例的完整流程。
 
-1. Extract the functional description of test requirements, determine the number of factors and levels
-2. Determine the n value based on the number of factors and the number of levels
-2. Select the appropriate orthogonal table
-3. Map the values of the variables to the table according to the orthogonal table, and design the test case data set
+支持Python版本为 2.7, 3.7。
 
-Referring to the above steps, this article uses Python to implement the complete process of automatically designing test cases using orthogonal tables.
-
-Supported Python 2.7 ~ 3.8.
-
-### 2.Demo
-Input case1, case2, case3, respectively calculate m (number of levels), k (number of factors), n (number of experiments), and then query to select the appropriate orthogonal table, crop and finally generate the relevant test set
+### 2.示例demo
+输入case1,case2,case3,分别计算m（水平数）,k（因素数目）,n（实验次数），然后查询选择合适的正交表，裁剪最终生成相关测试集
 
 ```
 # encoding: utf-8
@@ -60,7 +57,7 @@ if __name__ == "__main__":
 
 ```
 
-Run Result：
+执行结果如下：
 
 ```
 [{"K1": 0, "K2": 0, "K3": 0}, {"K1": 0, "K2": 1, "K3": 1}, {"K1": 1, "K2": 0, "K3": 1}, {"K1": 1, "K2": 1, "K3": 0}]
@@ -74,12 +71,12 @@ Run Result：
 
 ```
 
-### 3.To-Do List
-1. Decision table query logic optimization
-2. Test case set tailoring and optimization
+### 3.后续计划
+1. 判定表查询逻辑优化
+2. 测试用例集裁剪优化
 
-### 4.Reference
-1. [https://wenku.baidu.com/view/a54724156edb6f1aff001f79.html](https://github.com/lovesoo/OrthogonalArrayTest/blob/master/README.md)
-2. [http://blog.csdn.net/fangnannanf/article/details/52813498](https://github.com/lovesoo/OrthogonalArrayTest/blob/master/README.md)
-3. [http://www.york.ac.uk/depts/maths/tables/orthogonal.htm](https://github.com/lovesoo/OrthogonalArrayTest/blob/master/README.md)
-4. [http://support.sas.com/techsup/technote/ts723_Designs.txt](https://github.com/lovesoo/OrthogonalArrayTest/blob/master/README.md)
+### 4.参考
+1. 测试用例设计-正交实验法详解：[https://wenku.baidu.com/view/a54724156edb6f1aff001f79.html](http://www.york.ac.uk/depts/maths/tables/orthogonal.htm)
+2. 用正交实验法设计测试用例：[http://blog.csdn.net/fangnannanf/article/details/52813498](http://www.york.ac.uk/depts/maths/tables/orthogonal.htm)
+3. Dr. Genichi Taguchi 设计的正交表：[http://www.york.ac.uk/depts/maths/tables/orthogonal.htm](http://www.york.ac.uk/depts/maths/tables/orthogonal.htm)
+4. Technical Support com：[http://support.sas.com/techsup/technote/ts723_Designs.txt](http://www.york.ac.uk/depts/maths/tables/orthogonal.htm)
