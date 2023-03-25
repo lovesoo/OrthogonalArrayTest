@@ -79,7 +79,6 @@ Run Result：
 2. Test case set tailoring and optimization
 
 ### 4.Reference
-1. [https://wenku.baidu.com/view/a54724156edb6f1aff001f79.html](https://github.com/lovesoo/OrthogonalArrayTest/blob/master/README.md)
-2. [http://blog.csdn.net/fangnannanf/article/details/52813498](https://github.com/lovesoo/OrthogonalArrayTest/blob/master/README.md)
-3. [http://www.york.ac.uk/depts/maths/tables/orthogonal.htm](https://github.com/lovesoo/OrthogonalArrayTest/blob/master/README.md)
-4. [http://support.sas.com/techsup/technote/ts723_Designs.txt](https://github.com/lovesoo/OrthogonalArrayTest/blob/master/README.md)
+1. [https://wenku.baidu.com/view/a54724156edb6f1aff001f79.html](https://wenku.baidu.com/view/a54724156edb6f1aff001f79.html)
+2. [http://www.york.ac.uk/depts/maths/tables/orthogonal.htm](http://www.york.ac.uk/depts/maths/tables/orthogonal.htm)
+3. [http://support.sas.com/techsup/technote/ts723_Designs.txt](http://support.sas.com/techsup/technote/ts723_Designs.txt)
