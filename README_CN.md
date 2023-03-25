@@ -76,7 +76,6 @@ if __name__ == "__main__":
 2. 测试用例集裁剪优化
 
 ### 4.参考
-1. 测试用例设计-正交实验法详解：[https://wenku.baidu.com/view/a54724156edb6f1aff001f79.html](http://www.york.ac.uk/depts/maths/tables/orthogonal.htm)
-2. 用正交实验法设计测试用例：[http://blog.csdn.net/fangnannanf/article/details/52813498](http://www.york.ac.uk/depts/maths/tables/orthogonal.htm)
-3. Dr. Genichi Taguchi 设计的正交表：[http://www.york.ac.uk/depts/maths/tables/orthogonal.htm](http://www.york.ac.uk/depts/maths/tables/orthogonal.htm)
-4. Technical Support com：[http://support.sas.com/techsup/technote/ts723_Designs.txt](http://www.york.ac.uk/depts/maths/tables/orthogonal.htm)
+1. [https://wenku.baidu.com/view/a54724156edb6f1aff001f79.html](https://wenku.baidu.com/view/a54724156edb6f1aff001f79.html)
+2. [http://www.york.ac.uk/depts/maths/tables/orthogonal.htm](http://www.york.ac.uk/depts/maths/tables/orthogonal.htm)
+3. [http://support.sas.com/techsup/technote/ts723_Designs.txt](http://support.sas.com/techsup/technote/ts723_Designs.txt)
